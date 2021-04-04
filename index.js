@@ -130,3 +130,91 @@ function myFunction(number) {
 console.log(totn_number.toString(2));
 console.log(totn_number.toString(8));
 console.log(totn_number.toString(16))
+
+
+
+
+
+//program to read weekday number and print weekday name using switch.</h3>
+
+    let wDay=Number('5')
+     
+    switch(wDay)
+    {
+        case 0: 
+            console.log("Sunday");
+            break;
+        case 1: 
+            console.log("Monday");
+            break;
+        case 2: 
+            console.log("Tuesday");
+            break;
+        case 3: 
+            console.log("Wednesday");
+            break;
+        case 4: 
+            console.log("Thursday");
+            break;
+        case 5: 
+            console.log("Friday");
+            break;
+        case 6: 
+            console.log("Saturday");
+            break;
+        default:
+            console.log("Invalid weekday number.");
+    }
+
+   // program to read gender (M/F) and print corresponding gender using switch.</h3>
+
+
+    let gender=String('m')
+    switch(gender)
+    {
+        case 'M':
+        case 'm':
+            console.log("Male.");
+            break;
+        case 'F':
+        case 'f':
+            console.log("Female.");
+            break;
+        default:
+            console.log("Unspecified Gender.");
+    }
+
+    //Calculator program with Basic operations using switch</h3>
+
+
+    let num1, num2, result5, ch;
+    num1=Number('15')
+    num2=Number('3')
+    ch= ('-')
+     
+    result5=0;
+    switch(ch)    
+    {
+        case '+':
+            result5=num1+num2;
+            break;
+             
+        case '-':
+            result5=num1-num2;
+            break;
+         
+        case '*':
+            result5=num1*num2;
+            break;
+             
+        case '/':
+            result5=num1/num2;
+            break;
+             
+        case '%':
+            result5=num1%num2;
+            break;
+        default:
+            console.log("Invalid operation.\n");
+    }
+ console.log(`${num1} ${ch} ${num2} = ${result5}`)
