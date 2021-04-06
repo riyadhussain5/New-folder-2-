@@ -188,8 +188,8 @@ console.log(totn_number.toString(16))
 
 
     let num1, num2, result5, ch;
-    num1=Number('15')
-    num2=Number('3')
+    num1=15
+    num2=3
     ch= ('-')
      
     result5=0;
@@ -218,3 +218,130 @@ console.log(totn_number.toString(16))
             console.log("Invalid operation.\n");
     }
  console.log(`${num1} ${ch} ${num2} = ${result5}`)
+///// ternary practice
+
+ let age =  1;
+
+ let message10 = (age < 3) ? 'Hi, baby!' :
+   (age < 18) ? 'Hello!' :
+   (age < 100) ? 'Greetings!' :
+   'What an unusual age!';
+ 
+ console.log( message10 );
+
+ 
+
+///// buji nai
+let ab = 5.31;
+let resultab = (ab >= 0) ? (ab == 0 ? "zero" : "positive") : "negative";
+console.log(`The number is ${resultab}.`);
+
+let x1;
+x1 = 5 > 8 ? 10 : 1 != 2 < 5 ? 20 : 30;
+console.log('X is: ',x1)
+
+// 1. Food order system menu bar and calculate prices
+
+// demo:
+
+// choose your food
+// 1. Burger 180 tk
+// 2. Pizza  250 tk
+// 3. Shawrma 120 tk
+// 4. Drinks 80 tk
+
+// pressed 2:
+
+// how many burgers?
+
+// pressed 2
+
+// Final ouput: Total is 500 tk
+
+const Burger = 180 
+const Pizza = 250 
+const Shawrma = 120 
+const Drings = 80 
+let Food =('any number not > 4 ')
+FoodItem = 1
+
+     
+let result6,result7 ;
+switch(FoodItem)    
+{
+    case 1:
+        result6=Burger
+        result7= 'how many burger';
+       
+        break;
+         
+    case 2:
+        result6=Pizza;
+        result7= 'how many Pizza';
+        break;
+     
+    case 3:
+        result6=Shawrma;
+
+        result7= 'how many Shawrma';
+        break;
+         
+    case 4:
+        result6=Drings;
+        result7= 'how many Drings';
+        break;
+         
+   
+    default:
+        console.log("Invalid operation.\n");
+}
+console.log(`${result7}`)
+
+ let HowMany = 0
+let result8 = HowMany*result6 ;
+ console.log(`${HowMany} * ${result6} = ${result8} taka`)
+//end
+
+// 3. Given an integer, n, perform the following conditional actions:
+
+
+// If n is odd, print Weird
+// If n is even and in the inclusive range of 2 to 5, print Not Weird
+// If n is even and in the inclusive range of 6 to 20, print Weird
+// If n is even and greater than 20, print Not Weird
+// Input Format:
+// A single line containing a positive integer, n.
+// Constraints:
+// n lies between 1 and 100
+
+// Input:
+// 17
+
+// Output:
+// Weird
+let n = 17;
+if (n%2 != 0 || (n > 5 && n < 21))
+console.log("Weird");
+else
+console.log("Not Weird")
+
+//end of input
+
+const num4 = 33;
+const num5 = 44 ;
+const num6 = 11;
+let largest;
+
+// check the condition
+if (num4 >= num5 && num4 >= num6) {
+    largest = num4;
+}
+else if (num5 >= num4 && num5 >= num6) {
+    largest = num5;
+}
+else {
+    largest = num6;
+}
+
+// display the result
+console.log("The largest number is " + largest);
