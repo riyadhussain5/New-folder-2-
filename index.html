@@ -1,23 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <!---->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>setInterval/clearInterval example</title>
+  <style>
+    body {
+      font-family: Verdana;
+      margin: 50px 100px;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: green;
+      font-size: 18px;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-stop {
+      background-color: #133337;
+    }
+  </style>
+
+
 </head>
+
+<!-- <body onload="changeColor();"> -->
+
 <body>
-    <script>
-        let message10 = (age < 3) ? 'Hi, baby!' :
-       
-        alert( message10 );
-        
-   (age < 18) ? 'Hello!' :
-   (age < 100) ? 'Greetings!' :
-   'What an unusual age!';
- 
-alert( message10 );
-    </script>
+  
+   
+  <button onclick="stopTextColor();" class='btn-stop'>Stop</button>
+  <button onclick="startTextColor();">Start</button>
+  <span id="colorCode"></span>
+  
+
+
+
+  <script>
+
+    let i = 0;
+    let nIntervId;
+
+    function changeColor() {
+      nIntervId = setInterval(flashText, 1000);
+    }
+    changeColor()
+
+    function flashText() {
+
+var letters = '0123456789ABCDEF';
+var color = '#';
+for (var i = 0; i < 6; i++) {
+color += letters[Math.floor(Math.random() * 16)];
+
+// document.div.getElementById('colorCode').innerHtml = `<p>{color}</p>` ;
+// body.appendChild(document.div.getElementById('colorCode');
+
+}
+
+
+
+      
+      document.body.style.backgroundColor = color
+      colorCode.innerHTML = `<h1> COLOR CODE: ${color}</h1>` ;
+    
+      
+      if (i == color.length) {
+        i = 0;
+      }
+
+    }
+
+
+    function stopTextColor() {
+      clearInterval(nIntervId);
+    }
+    function startTextColor() {
+      clearInterval(nIntervId);
+      changeColor()
+
+    }
+
+
+  </script>
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+/*
 const scores =[90, 98, 89, 100, 100, 86, 94];
 let sum = 0;
 let avg = 0;
@@ -345,3 +346,87 @@ else {
 
 // display the result
 console.log("The largest number is " + largest);
+
+
+
+let i=0, N
+N=8
+
+while(i<=N){
+   console.log(i)
+   i=i+1
+}
+// while loop works with its given formula
+//jokhon sortho dilam 10 er besi jabe na tokhon value i er against e set kore dibo..
+//  >print 1 to N numbers<
+
+   
+let N = 0,i=0;
+
+while (i<=10){
+  N= i
+  console.log(N)
+  i++
+}
+
+// print 20 horizontal asterisks (*) 
+
+let i=0, output='';
+
+while(i<19){
+   output+= '*'
+   i++;
+}
+console.log('value of i: '+i);
+console.log(output);
+
+// write a program to calculate the sum of numbers from M to N
+
+
+let N= 68,i=13, sum=0;
+
+while (i<=N){
+  sum = i+ sum
+  console.log(sum)
+  i++
+  
+}
+
+
+*/
+
+// wte a program to calculate the sum of 2nd to 5th numbers
+
+
+//        
+let i =0,number=[1,2,3,4,5,6,7,8,9],sum=0
+while(i<number.length){
+   
+   if(number[i]>0 && number[i]<5 )
+   {
+     sum = sum + number[i]
+   }
+  i++
+}
+console.log(sum)
+
+
+
+
+function flashText() {
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+    document.body.style.backgroundColor = colors[i]
+    i++;
+    if (i == colors.length) {
+      i = 0;
+    }
+
+  }
